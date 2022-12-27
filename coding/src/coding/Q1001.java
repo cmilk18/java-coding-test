@@ -1,7 +1,7 @@
 package coding;
 
-public class n2 {
+public class Q1001 {
 	public static void main(String[] args) {
-		System.out.println("hello2");
+		System.out.print("Hello");
 	}
 }
