@@ -1,15 +1,15 @@
 package coding;
 import java.util.Scanner;
 
-public class Q1012 {
+public class Q1030 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Float a;
+
 		Scanner sc = new Scanner(System.in);
-		a = sc.nextFloat();
+		long a = sc.nextLong();
 		sc.close();
-		System.out.printf("%f\n",a);
+		System.out.println(a);
 	}
 
 }

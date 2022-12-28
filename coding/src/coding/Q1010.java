@@ -7,7 +7,9 @@ public class Q1010 {
 		// TODO Auto-generated method stub
 		int a;
 		Scanner sc = new Scanner(System.in);
+		
 		a = sc.nextInt();
+		sc.close();
 		System.out.println(a);
 	}
 

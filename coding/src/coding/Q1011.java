@@ -8,6 +8,7 @@ public class Q1011 {
 		String a;
 		Scanner sc = new Scanner(System.in);
 		a = sc.next();
+		sc.close();
 		System.out.println(a);
 	}
 
