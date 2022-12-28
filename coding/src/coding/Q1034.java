@@ -1,16 +1,16 @@
 package coding;
 import java.util.Scanner;
 
-public class Q1033 {
+public class Q1034 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
+		String a = sc.next();
 		sc.close();
-		String b = Integer.toString(a,16).toUpperCase();
-		System.out.println(b);
+		int b = Integer.parseInt(a,8);
+		System.out.printf("%d",b);
 	}
 
 }
