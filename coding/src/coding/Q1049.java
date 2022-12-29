@@ -1,20 +1,22 @@
 package coding;
 import java.util.Scanner;
 
-public class Q1038 {
+public class Q1049 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
-		
-		long a = sc.nextLong();
-		long b = sc.nextLong();
+		int a = sc.nextInt();
+		int b = sc.nextInt();
 		
 		sc.close();
-		
-		System.out.println(a+b);
+		if(a>b) {
+			System.out.println(1);
+		}
+		else {
+			System.out.println(0);
+		}
 	}
 
 }
-//22 1033 1034

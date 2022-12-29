@@ -1,20 +1,19 @@
 package coding;
 import java.util.Scanner;
 
-public class Q1038 {
+public class Q1046 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
-		
-		long a = sc.nextLong();
-		long b = sc.nextLong();
-		
+		float a = sc.nextFloat();
+		float b = sc.nextFloat();
+		float c = sc.nextFloat();
 		sc.close();
 		
-		System.out.println(a+b);
+		System.out.printf("%.0f\n",a+b+c);
+		System.out.printf("%.1f",(a+b+c)/3);
 	}
 
 }
-//22 1033 1034

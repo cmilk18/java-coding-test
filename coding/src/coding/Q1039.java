@@ -1,7 +1,7 @@
 package coding;
 import java.util.Scanner;
 
-public class Q1038 {
+public class Q1039 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,4 +17,3 @@ public class Q1038 {
 	}
 
 }
-//22 1033 1034
