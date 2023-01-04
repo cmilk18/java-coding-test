@@ -1,39 +1,38 @@
 package part2;
-import java.util.Scanner;
 
-public class Q243 {
-	public static int n, m, x, y, direction;
+import java.util.*;
+
+public class Q0104 {
 	
-	public static int[][] d = new int[50][50];
+	public static int n,m,x,y,direction;
+	
+	public static int[][]d = new int [50][50];
 	
 	public static int[][]arr = new int[50][50];
 	
-	//행렬로 위치 변경 북동남서
-	public static int []dx = {-1,0,1,0};
-	public static int []dy = {0,1,0,-1};
+	public static int[]dx= {-1,0,1,0};
+	public static int[]dy= {0,1,0,-1};
 	
 	public static void turn_left() {
 		direction -= 1;
-		if(direction == -1) direction = 3;
+		if(direction == -1) direction =3;
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
+		n=sc.nextInt();
+		m=sc.nextInt();
 		
-		n = sc.nextInt();
-		m = sc.nextInt();
-		
-		x = sc.nextInt();
+		x=sc.nextInt();
 		y=sc.nextInt();
-		direction = sc.nextInt();
+		direction=sc.nextInt();
 		d[x][y] = 1;
 		
 		for(int i=0;i<n;i++) {
-			for(int j=0;j<m; j++) {
+			for(int j=0;j<m;j++) {
 				arr[i][j] = sc.nextInt();
-				
 			}
 		}
 		sc.close();
@@ -44,7 +43,7 @@ public class Q243 {
 		while(true) {
 			turn_left();
 			int nx = x + dx[direction];
-			int ny = y + dy[direction];
+			int ny = y + dx[direction];
 			
 			if(d[nx][ny]==0 && arr[nx][ny]==0) {
 				d[nx][ny] = 1;
@@ -54,9 +53,8 @@ public class Q243 {
 				turn_time=0;
 				continue;
 			}
-			
-			else turn_time +=1;
-			if(turn_time==4) {
+			else turn_time += 1;
+			if(turn_time == 4) {
 				nx = x - dx[direction];
 				ny = y - dy[direction];
 				if(arr[nx][ny]==0) {
@@ -64,10 +62,10 @@ public class Q243 {
 					y=ny;
 				}
 				else break;
-				turn_time =0;
+				turn_time = 0;
 			}
 		}
 		System.out.println(cnt);
+		
 	}
-
 }
