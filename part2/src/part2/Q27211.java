@@ -32,8 +32,12 @@ public class Q27211 {
 		Arrays.sort(arr);
 		
 		int m = sc.nextInt();
-		sc.close();
+		
 		int[] targets = new int[m];
+		for(int i=0;i<m;i++) {
+			targets[i] = sc.nextInt();
+		}
+		sc.close();
 		for(int i=0;i<m;i++) {
 			int result = binarySearch(arr,targets[i],0,n-1);
 			if(result != -1) {
