@@ -6,7 +6,7 @@ public class Q2528 {
 
 	public static boolean[] visited = new boolean[9];
 	public static ArrayList<ArrayList<Integer>>graph = new ArrayList<ArrayList<Integer>>();
-	
+	//dfs
 	public static void dfs(int x) {
 		visited[x] = true;
 		System.out.print(x+" ");

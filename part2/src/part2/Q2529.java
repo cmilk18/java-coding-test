@@ -8,7 +8,7 @@ public class Q2529 {
 	
 	public static boolean[] visited = new boolean[9];
 	public static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
-
+	//bfs
 	public static void bfs(int start) {
 		Queue<Integer> q = new LinkedList<>();
 		q.offer(start);
